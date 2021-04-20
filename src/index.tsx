@@ -8,7 +8,7 @@ import {
 
 export interface Row {
   title: any
-  availability: Array<'full' | 'half' | 'empty'>
+  availabilities: Array<'full' | 'half' | 'empty'>
 }
 
 interface Props {
@@ -78,7 +78,7 @@ export class WorkAvailability extends React.Component<Props, {}> {
               // eslint-disable-next-line react/jsx-key
               <tr>
                 <td>{row.title}</td>
-                {row.availability.map((value) => (
+                {row.availabilities.map((value) => (
                   // eslint-disable-next-line react/jsx-key
                   <td className={value}>{this.status(value)}</td>
                 ))}

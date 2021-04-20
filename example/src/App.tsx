@@ -11,9 +11,9 @@ const headers:Array<string> = [
   '6月'
 ]
 const data:Array<Row> = [
-  {title: "CMS構築", availability: ['full', 'empty', 'full']},
-  {title: "技術顧問", availability: ['full', 'full', 'half']},
-  {title: "システム開発", availability: ['empty', 'full', 'empty']}
+  {title: "CMS構築", availabilities: ['full', 'empty', 'full']},
+  {title: "技術顧問", availabilities: ['full', 'full', 'half']},
+  {title: "システム開発", availabilities: ['empty', 'full', 'empty']}
 ]
 const empty = (<div className='text-danger'>むり</div>)
 const App = () => {
