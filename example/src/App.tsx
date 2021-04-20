@@ -23,7 +23,7 @@ const App = () => {
       <WorkAvailability columns={columns} data={data}
                         header='項目' type='text' full='いけるよ' half='まぁまぁ' empty={empty} className='table table-primary w-50 mb-3' />
       <WorkAvailability columns={columns} data={data}
-                        header='項目' type='image' full='./full.jpeg' half='./half.png' empty='./empty.png' className='table w-50 mb-3' />
+                        header='項目' type='image' full='./full.png' half='./half.png' empty='./empty.png' className='table w-50 mb-3' />
     </div>
   )
 }
