@@ -1,10 +1,12 @@
 # work-availability
 
-> Made with create-react-library
+お仕事やリソース状況をリスト出力するReactコンポーネント。
+[HAMWORKS](https://twitter.com/hamworks/status/1377425482023571460?s=20) さんのリソース状況をインスパイアして、作成しました。
+
 
 [![NPM](https://img.shields.io/npm/v/work-availability.svg)](https://www.npmjs.com/package/work-availability) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+## インストール
 
 npm
 ```bash
@@ -16,7 +18,7 @@ yarn
 yarn add work-availability
 ```
 
-## Usage
+## 使い方
 
 ```tsx
 import React, { Component } from 'react'
@@ -45,6 +47,9 @@ class Example extends Component {
   }
 }
 ```
+
+### 出力結果
+![](./example.png)
 
 ## 各パラメーターについて
 ### headers
