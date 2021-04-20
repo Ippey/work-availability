@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 export interface Row {
-  name: any
+  title: any
   availability: Array<'full' | 'half' | 'empty'>
 }
 
@@ -18,15 +18,13 @@ interface Props {
   full?: any
   half?: any
   empty?: any
-  header?: any
-  columns: Array<any>
+  headers: Array<any>
   data: Array<Row>
 }
 
 export class WorkAvailability extends React.Component<Props, {}> {
   public status(value: string) {
     if (value === 'full') {
-      console.log('hoge')
       return this.full()
     } else if (value === 'empty') {
       return this.empty()
@@ -69,8 +67,7 @@ export class WorkAvailability extends React.Component<Props, {}> {
         <table id={id} className={className}>
           <thead>
             <tr>
-              <th>{this.props.header}</th>
-              {this.props.columns.map((value) => (
+              {this.props.headers.map((value) => (
                 // eslint-disable-next-line react/jsx-key
                 <th>{value}</th>
               ))}
@@ -80,7 +77,7 @@ export class WorkAvailability extends React.Component<Props, {}> {
             {this.props.data.map((row) => (
               // eslint-disable-next-line react/jsx-key
               <tr>
-                <td>{row.name}</td>
+                <td>{row.title}</td>
                 {row.availability.map((value) => (
                   // eslint-disable-next-line react/jsx-key
                   <td className={value}>{this.status(value)}</td>
